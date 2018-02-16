@@ -27,6 +27,8 @@ import UIRefreshControl from '../UI Components/RefreshControl/UIRefreshControl';
 import UIScrollView from '../UI Components/ScrollView/UIScrollView';
 import UISectionList from '../UI Components/SectionList/UISectionList';
 import UISegmentControl from '../UI Components/SegmentControlIOS/UISegmentControl';
+import UITabbar from '../UI Components/TabbarIOS/UITabbar';
+import UIText from '../UI Components/Text/UIText';
 
 const Navigator = StackNavigator({
   Home: { screen: Home },          //Add screen by screen to navigate to stack
@@ -46,8 +48,14 @@ const Navigator = StackNavigator({
   ProgressViewIOS: { screen: UIProgressViewIOS },
   RefreshControl: {screen: UIRefreshControl},
   ScrollView: {screen: UIScrollView},
-  SectionList: {screen: UISegmentControl},
-  SegmentControl: {screen: UISegmentControl},
+  SectionList: {screen: UISectionList},
+  SegmentedControlIOS: {screen: UISegmentControl},
+  Slider: {screen: UISegmentControl},
+  SnapshotViewIOS: {screen: UISegmentControl},
+  StatusBar: {screen: UISegmentControl},
+  Switch: {screen: UISegmentControl}, 
+  TabBarIOS: {screen: UITabbar},
+  Text: {screen: UIText},
 });
 
 export default Navigator;
