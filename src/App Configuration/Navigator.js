@@ -29,6 +29,7 @@ import UISectionList from '../UI Components/SectionList/UISectionList';
 import UISegmentControl from '../UI Components/SegmentControlIOS/UISegmentControl';
 import UITabbar from '../UI Components/TabbarIOS/UITabbar';
 import UIText from '../UI Components/Text/UIText';
+import UITextInput from '../UI Components/TextInput/UITextInput.js';
 
 const Navigator = StackNavigator({
   Home: { screen: Home },          //Add screen by screen to navigate to stack
@@ -56,6 +57,7 @@ const Navigator = StackNavigator({
   Switch: {screen: UISegmentControl}, 
   TabBarIOS: {screen: UITabbar},
   Text: {screen: UIText},
+  TextInput: {screen: UITextInput},
 });
 
 export default Navigator;

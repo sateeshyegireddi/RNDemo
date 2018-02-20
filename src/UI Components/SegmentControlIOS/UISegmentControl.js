@@ -9,7 +9,7 @@ import {
 export default class UISegmentControl extends Component {
 
   static navigationOptions = ({ navigation }) => ({
-    title: navigation.state.params.title
+    title: navigation.state.params.title,
   })
 
   render() {
