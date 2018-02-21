@@ -30,6 +30,7 @@ import UISegmentControl from '../UI Components/SegmentControlIOS/UISegmentContro
 import UITabbar from '../UI Components/TabbarIOS/UITabbar';
 import UIText from '../UI Components/Text/UIText';
 import UITextInput from '../UI Components/TextInput/UITextInput.js';
+import UIToolbar from '../UI Components/ToolBarAndroid/UIToolBar.js';
 
 const Navigator = StackNavigator({
   Home: { screen: Home },          //Add screen by screen to navigate to stack
@@ -58,6 +59,7 @@ const Navigator = StackNavigator({
   TabBarIOS: {screen: UITabbar},
   Text: {screen: UIText},
   TextInput: {screen: UITextInput},
+  ToolbarAndroid: {screen: UIToolbar},
 });
 
 export default Navigator;
