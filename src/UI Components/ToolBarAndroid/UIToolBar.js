@@ -64,6 +64,9 @@ export default class UIToolbar extends Component {
                     onActionSelected={this._onActionSelected}
                     rtl={false}
                 />
+                <Text style={styles.heading}>
+                    Props
+                </Text>
                 <ComponentProperty
                     status={'optional'}
                     type={'optionalImageSource'}

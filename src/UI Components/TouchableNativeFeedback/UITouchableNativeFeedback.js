@@ -56,6 +56,9 @@ export default class UITouchableNativeFeedback extends Component {
                             </Text>
                         </View>
                     </TouchableNativeFeedback>
+                    <Text style={styles.heading}>
+                        Props
+                    </Text>
                     <ComponentProperty
                         status={'optional'}
                         type={'backgroundPropType'}

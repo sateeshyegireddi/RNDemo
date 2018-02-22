@@ -63,8 +63,11 @@ export default class UITouchableHighlight extends Component {
                             style={styles.touchableText}
                         >
                             Touch Here
-                    </Text>
+                        </Text>
                     </TouchableHighlight>
+                    <Text style={styles.heading}>
+                        Props
+                    </Text>
                     <ComponentProperty
                         status={'optional'}
                         type={'number'}

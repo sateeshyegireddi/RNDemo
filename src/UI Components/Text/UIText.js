@@ -53,6 +53,9 @@ export default class UIText extends Component {
                         <View style={{ width: 50, height: 50, backgroundColor: 'steelblue' }} />
                         {this.state.bodyText}
                     </Text>
+                    <Text style={styles.heading}>
+                        Props
+                    </Text>
                     <ComponentProperty
                         status={'optional'}
                         type={'bool'}

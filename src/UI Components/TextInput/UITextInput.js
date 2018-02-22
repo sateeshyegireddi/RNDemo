@@ -74,6 +74,9 @@ export default class UITextInput extends Component {
                         secureTextEntry={true}
                         ref='2'
                     />
+                    <Text style={styles.heading}>
+                        Props
+                    </Text>
                     <ComponentProperty
                         status={'optional'}
                         type={'color'}
