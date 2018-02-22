@@ -28,6 +28,20 @@ export default class UITouchableHighlight extends Component {
     }
 
     render() {
+
+        let sampleCode = '<TouchableHighlight\n\t' +
+            'onPress={this._onPress}\n\t' +
+            'underlayColor={\'orange\'}\n\t' +
+            'activeOpacity={0.7}\n\t' +
+            'onHideUnderlay={this._onHideUnderlay}\n\t' +
+            'onShowUnderlay={this._onShowUnderlay}\n\t' +
+            'style={styles.touchableArea}>\n\t' +
+            '<Text\n\t\t' +
+            'style={styles.touchableText}>\n\t\t' +
+            'Touch Here\n\t' +
+            '</Text>\n' +
+            '</TouchableHighlight>';
+
         return (
             <View>
                 <ScrollView>
@@ -94,6 +108,8 @@ export default class UITouchableHighlight extends Component {
                         description={'(Apple TV only) Object with properties to control Apple TV parallax effects.\n\n' +
                             'enabled: If true, parallax effects are enabled. Defaults to true. shiftDistanceX: Defaults to 2.0. shiftDistanceY: Defaults to 2.0. tiltAngle: Defaults to 0.05. magnification: Defaults to 1.0.'}
                     />
+                    <Text style={styles.heading}> Sample Code </Text>
+                    <Text style={styles.text}> {sampleCode} </Text>
                 </ScrollView>
             </View>
         );
@@ -107,9 +123,22 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         padding: 10,
         backgroundColor: 'orange',
+        borderRadius: 5,
     },
     touchableText: {
         fontSize: 18,
         color: 'white',
-    }
+    },
+    heading: {
+        margin: 10,
+        fontSize: 20,
+        fontStyle: 'normal',
+        color: '#005068',
+    },
+    text: {
+        margin: 10,
+        fontSize: 16,
+        fontStyle: 'normal',
+        fontWeight: 'normal',
+    },
 });

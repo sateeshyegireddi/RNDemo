@@ -25,6 +25,22 @@ export default class UIToolbar extends Component {
     }
 
     render() {
+
+        let sampleCode = '<ToolbarAndroid\n\t' +
+            'style={styles.toolbar}\n\t' +
+            'navIcon={require(\'../../../img/android.png\')}\n\t' +
+            'onIconClicked={this._onIconClicked}\n\t' +
+            'title={\"Android Tool Bar\"}\n\t' +
+            'titleColor={\'black\'}\n\t' +
+            'actions={[\n\t\t' +
+            '{ title: \"Settings\", show: \"never\" },\n\t\t' +
+            '{ title: \"Logout\", show: \"never\" }\n\t' +
+            ']}\n\t' +
+            'subtitle={\'subTitle\'}\n\t' +
+            'onActionSelected={this._onActionSelected}\n\t' +
+            'rtl={false}\n' +
+            '/>\n';
+
         return (
             <ScrollView>
                 <ComponentDescription
@@ -141,16 +157,28 @@ export default class UIToolbar extends Component {
                     name={'titleColor'}
                     description={'Sets the toolbar title color.'}
                 />
+                <Text style={styles.heading}> Sample Code </Text>
+                <Text style={styles.text}> {sampleCode} </Text>
             </ScrollView>
         );
     }
 }
 
 const styles = StyleSheet.create({
-
     toolbar: {
         backgroundColor: 'lightgray',
         height: 56,
     },
-
+    heading: {
+        margin: 10,
+        fontSize: 20,
+        fontStyle: 'normal',
+        color: '#005068',
+    },
+    text: {
+        margin: 10,
+        fontSize: 16,
+        fontStyle: 'normal',
+        fontWeight: 'normal',
+    },
 });

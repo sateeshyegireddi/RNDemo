@@ -32,6 +32,7 @@ import UIText from '../UI Components/Text/UIText';
 import UITextInput from '../UI Components/TextInput/UITextInput.js';
 import UIToolbar from '../UI Components/ToolBarAndroid/UIToolBar.js';
 import UITouchableHighlight from '../UI Components/TouchableHighlight/UITouchableHighlight.js';
+import UITouchableNativeFeedback from '../UI Components/TouchableNativeFeedback/UITouchableNativeFeedback.js';
 
 const Navigator = StackNavigator({
   Home: { screen: Home },          //Add screen by screen to navigate to stack
@@ -62,6 +63,7 @@ const Navigator = StackNavigator({
   TextInput: {screen: UITextInput},
   ToolbarAndroid: {screen: UIToolbar},
   TouchableHighlight: {screen: UITouchableHighlight},
+  TouchableNativeFeedback: {screen: UITouchableNativeFeedback},
 });
 
 export default Navigator;
