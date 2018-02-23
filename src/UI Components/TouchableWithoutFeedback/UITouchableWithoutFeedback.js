@@ -140,12 +140,8 @@ export default class UITouchableWithoutFeedback extends Component {
                         name={'pressRetentionOffset'}
                         description={'When the scroll view is disabled, this defines how far your touch may move off of the button, before deactivating the button. Once deactivated, try moving it back and you\'ll see that the button is once again reactivated! Move it back and forth several times while the scroll view is disabled. Ensure you pass in a constant to reduce memory allocations.'}
                     />
-                    <ComponentProperty
-                        status={'optional'}
-                        type={'function'}
-                        name={'onPressOut'}
-                        description={'Called as soon as the touch is released even before onPress.'}
-                    />
+                    <Text style={styles.heading}> Sample Code </Text>
+                    <Text style={styles.text}> {sampleCode} </Text>
                 </ScrollView>
             </View>
         );
