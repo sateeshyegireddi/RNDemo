@@ -41,7 +41,6 @@ export default class UITouchableWithoutFeedback extends Component {
                     />
                     <TouchableWithoutFeedback
                         onPress={this._onPress}
-                        style={styles.touchableArea}
                     >
                         <View
                             style={styles.buttonView}
