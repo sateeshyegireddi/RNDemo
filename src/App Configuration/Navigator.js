@@ -35,6 +35,7 @@ import UITouchableHighlight from '../UI Components/TouchableHighlight/UITouchabl
 import UITouchableNativeFeedback from '../UI Components/TouchableNativeFeedback/UITouchableNativeFeedback.js';
 import UITouchableWithoutFeedback from '../UI Components/TouchableWithoutFeedback/UITouchableWithoutFeedback.js';
 import UITouchableOpacity from '../UI Components/TouchableOpacity/UITouchableOpacity.js';
+import UIView from '../UI Components/View/UIView.js';
 
 const Navigator = StackNavigator({
   Home: { screen: Home },          //Add screen by screen to navigate to stack
@@ -68,6 +69,7 @@ const Navigator = StackNavigator({
   TouchableNativeFeedback: {screen: UITouchableNativeFeedback},
   TouchableOpacity: {screen: UITouchableOpacity},
   TouchableWithoutFeedback: {screen: UITouchableWithoutFeedback},
+  View: {screen: UIView},
 });
 
 export default Navigator;
