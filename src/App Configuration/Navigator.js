@@ -36,6 +36,7 @@ import UITouchableNativeFeedback from '../UI Components/TouchableNativeFeedback/
 import UITouchableWithoutFeedback from '../UI Components/TouchableWithoutFeedback/UITouchableWithoutFeedback.js';
 import UITouchableOpacity from '../UI Components/TouchableOpacity/UITouchableOpacity.js';
 import UIView from '../UI Components/View/UIView.js';
+import UIViewPager from '../UI Components/ViewPagerAndroid/UIViewPager.js';
 
 const Navigator = StackNavigator({
   Home: { screen: Home },          //Add screen by screen to navigate to stack
@@ -70,6 +71,7 @@ const Navigator = StackNavigator({
   TouchableOpacity: {screen: UITouchableOpacity},
   TouchableWithoutFeedback: {screen: UITouchableWithoutFeedback},
   View: {screen: UIView},
+  ViewPagerAndroid: {screen: UIViewPager},
 });
 
 export default Navigator;
